@@ -1,0 +1,44 @@
+.Header {
+  margin: 10px 5px 5px;
+  padding: 1.5em;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Navigation {
+  flex: 2 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.NavLink {
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.NavLink.selected {
+  border-bottom: 4px solid #ff8307;
+}
+
+.NavLink:hover {
+  border-bottom: 4px solid #ffbd4a;
+}
+
+
+.Title {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: bold;
+  flex: 1 0 0;
+}
+
+.Separator {
+  display: inline-block;
+  margin: 0 5px;
+  flex: 1;
+}

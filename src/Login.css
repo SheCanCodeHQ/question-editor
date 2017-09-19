@@ -1,0 +1,18 @@
+.LoginCard {
+  margin: 10px 5px 5px;
+  padding: 1em;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginInput input{
+  margin: 20px;
+}
+
+.LoginError {
+  color: red;
+  font-size: 0.9em;
+}

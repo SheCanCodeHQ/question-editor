@@ -1,0 +1,55 @@
+# project: _your project ID_
+
+type Answer implements Node {
+  archived: Boolean! @defaultValue(value: false)
+  createdAt: DateTime!
+  id: ID! @isUnique
+  question: Question @relation(name: "QuestionOnAnswer")
+  text: String!
+  updatedAt: DateTime!
+  users: [User!]! @relation(name: "UserSelectedAnswer")
+}
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type Question implements Node {
+  answers: [Answer!]! @relation(name: "QuestionOnAnswer")
+  createdAt: DateTime!
+  id: ID! @isUnique
+  text: String!
+  type: QuestionType! @defaultValue(value: MULTIPLE_CHOICE)
+  updatedAt: DateTime!
+}
+
+type User implements Node {
+  answers: [Answer!]! @relation(name: "UserSelectedAnswer")
+  createdAt: DateTime!
+  id: ID! @isUnique
+  isVerified: Boolean! @defaultValue(value: false)
+  secret: String @isUnique
+  updatedAt: DateTime!
+  email: String @isUnique
+  name: String!
+  password: String
+  role: UserRole! @defaultValue(value: USER)
+}
+
+enum QuestionType {
+  MULTIPLE_CHOICE
+  FREE_TEXT
+  OPEN_MULTIPLE_CHOICE
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}

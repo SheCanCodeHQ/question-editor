@@ -1,0 +1,92 @@
+.QuestionList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+.QuestionCard {
+  margin: 5px;
+  padding: 15px;
+  background-color: #ddd;
+  box-sizing: border-box;
+  min-width: 350px;
+  flex: 1;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.QuestionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.QuestionButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.updatedAt {
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.Question {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+.QuestionTextInput {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.Answers {
+  flex: 1;
+}
+
+.Answer {
+  display: block;
+  margin: 0.8em 0;
+}
+
+.InputAnswer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.InputAnswer input{
+  flex: 1;
+}
+
+.Archived {
+  text-decoration: line-through;
+  color: #666666;
+}
+
+.Count {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-left: 10px;
+  color: #777777;
+  flex: 1;
+}
+
+.QuestionSave {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*flex: 2;*/
+}
+
+.Warning {
+  color: darkred;
+  font-size: 0.7em;
+  text-align: center;
+}
