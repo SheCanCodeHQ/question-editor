@@ -1,4 +1,5 @@
-# project: _your project ID_
+# project: example_project_id
+# version: example_version_id
 
 type Answer implements Node {
   archived: Boolean! @defaultValue(value: false)
