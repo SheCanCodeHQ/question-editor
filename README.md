@@ -2,7 +2,12 @@
 
 ##Goal
 
-This is the admin part of the [question-queue]() project.
+This is the admin part of the [question-queue](https://github.com/SheCanCodeHQ/question-queue) project.
+
+It lets admins edit questions that will then be used by the question queue.
+
+Future: Show reports on answers selected by users, export questions to different formats..
+
 ##Screenshots
 
 ##Install
